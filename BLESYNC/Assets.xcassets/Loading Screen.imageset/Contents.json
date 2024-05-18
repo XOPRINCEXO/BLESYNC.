@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "BLESYNC UI.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

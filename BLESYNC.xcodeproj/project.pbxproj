@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1BCC53232BF8188A0051BCA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC53222BF8188A0051BCA3 /* AppDelegate.swift */; };
 		1BCC53252BF8188A0051BCA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC53242BF8188A0051BCA3 /* SceneDelegate.swift */; };
-		1BCC53272BF8188A0051BCA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC53262BF8188A0051BCA3 /* ViewController.swift */; };
+		1BCC53272BF8188A0051BCA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC53262BF8188A0051BCA3 /* MainViewController.swift */; };
 		1BCC532A2BF8188A0051BCA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCC53282BF8188A0051BCA3 /* Main.storyboard */; };
 		1BCC532C2BF8188C0051BCA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCC532B2BF8188C0051BCA3 /* Assets.xcassets */; };
 		1BCC532F2BF8188C0051BCA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCC532D2BF8188C0051BCA3 /* LaunchScreen.storyboard */; };
+		1BCC53372BF81A450051BCA3 /* ScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC53362BF81A450051BCA3 /* ScanningViewController.swift */; };
+		1BCC533B2BF81FED0051BCA3 /* ScannedDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC53392BF81FED0051BCA3 /* ScannedDeviceTableViewCell.swift */; };
+		1BCC533C2BF81FED0051BCA3 /* ScannedDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCC533A2BF81FED0051BCA3 /* ScannedDeviceTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BCC531F2BF8188A0051BCA3 /* BLESYNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLESYNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCC53222BF8188A0051BCA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BCC53242BF8188A0051BCA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BCC53262BF8188A0051BCA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BCC53262BF8188A0051BCA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1BCC53292BF8188A0051BCA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BCC532B2BF8188C0051BCA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BCC532E2BF8188C0051BCA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BCC53302BF8188C0051BCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCC53362BF81A450051BCA3 /* ScanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningViewController.swift; sourceTree = "<group>"; };
+		1BCC53392BF81FED0051BCA3 /* ScannedDeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		1BCC533A2BF81FED0051BCA3 /* ScannedDeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannedDeviceTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		1BCC53212BF8188A0051BCA3 /* BLESYNC */ = {
 			isa = PBXGroup;
 			children = (
+				1BCC53382BF81FC10051BCA3 /* TableViewCell */,
 				1BCC53222BF8188A0051BCA3 /* AppDelegate.swift */,
 				1BCC53242BF8188A0051BCA3 /* SceneDelegate.swift */,
-				1BCC53262BF8188A0051BCA3 /* ViewController.swift */,
+				1BCC53262BF8188A0051BCA3 /* MainViewController.swift */,
+				1BCC53362BF81A450051BCA3 /* ScanningViewController.swift */,
 				1BCC53282BF8188A0051BCA3 /* Main.storyboard */,
 				1BCC532B2BF8188C0051BCA3 /* Assets.xcassets */,
 				1BCC532D2BF8188C0051BCA3 /* LaunchScreen.storyboard */,
 				1BCC53302BF8188C0051BCA3 /* Info.plist */,
 			);
 			path = BLESYNC;
+			sourceTree = "<group>";
+		};
+		1BCC53382BF81FC10051BCA3 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1BCC53392BF81FED0051BCA3 /* ScannedDeviceTableViewCell.swift */,
+				1BCC533A2BF81FED0051BCA3 /* ScannedDeviceTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +144,7 @@
 			files = (
 				1BCC532F2BF8188C0051BCA3 /* LaunchScreen.storyboard in Resources */,
 				1BCC532C2BF8188C0051BCA3 /* Assets.xcassets in Resources */,
+				1BCC533C2BF81FED0051BCA3 /* ScannedDeviceTableViewCell.xib in Resources */,
 				1BCC532A2BF8188A0051BCA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BCC53272BF8188A0051BCA3 /* ViewController.swift in Sources */,
+				1BCC53272BF8188A0051BCA3 /* MainViewController.swift in Sources */,
+				1BCC533B2BF81FED0051BCA3 /* ScannedDeviceTableViewCell.swift in Sources */,
 				1BCC53232BF8188A0051BCA3 /* AppDelegate.swift in Sources */,
 				1BCC53252BF8188A0051BCA3 /* SceneDelegate.swift in Sources */,
+				1BCC53372BF81A450051BCA3 /* ScanningViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +315,7 @@
 				DEVELOPMENT_TEAM = 72F52S857C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BLESYNC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BLESYNC.;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +344,7 @@
 				DEVELOPMENT_TEAM = 72F52S857C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BLESYNC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BLESYNC.;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
