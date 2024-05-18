@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Loading Page.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
