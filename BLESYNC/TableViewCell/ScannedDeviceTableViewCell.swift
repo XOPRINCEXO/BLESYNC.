@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class ScannedDeviceTableViewCell: UITableViewCell {
 
@@ -41,6 +42,25 @@ class ScannedDeviceTableViewCell: UITableViewCell {
     
     private func setupUi() {
         self.mainCellView.layer.cornerRadius = 10
+    }
+    
+    func configureCellData(device: BLEDevice) {
+        self.deviceName.text = device.deviceName
+        self.deviceMacAddress.text = "\(device.deviceUDID)"
+        self.rfValue.text = device.deviceRSSi
+        self.deviceManufacturer.text = device.deviceManufacturer
+        
+        if self.deviceName.text == "Unknown Device" {
+            self.deviceIcon.image = UIImage(systemName: "questionmark.circle.fill")
+        }else {
+            self.deviceIcon.image = UIImage(systemName: "headphones")
+        }
+        
+        if device.isConnectable {
+            self.deviceName.textColor = .red
+        }else {
+            self.deviceName.textColor = .black
+        }
     }
     
 }
