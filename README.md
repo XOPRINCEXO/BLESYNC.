@@ -20,7 +20,7 @@ https://github.com/XOPRINCEXO/BLESYNC./assets/35366080/836ede9a-5719-4077-bf0a-1
 
 - Neaby BLE Scanning.
 - Display BLE Devices with Name, Identifier and Manufacture Data.
-- Displaying unconnectable in Red.
+- Displaying unconnectable Device in Red.
 
   
 ## Upcoming Features in v 2.0
